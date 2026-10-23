@@ -1,3 +1,161 @@
-<html>
-  <h1>develop</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barış Güneri — Android Developer Portfolio</title>
+    <meta name="description" content="Barış Güneri - Android Developer Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Top Controls Bar (Language & Theme Toggles) -->
+        <header class="top-bar">
+            <div class="controls-group">
+                <!-- Language Toggle Button -->
+                <button id="langToggleBtn" class="control-btn" type="button" aria-label="Switch language">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-btn-label">TR</span>
+                </button>
+
+                <div class="control-divider"></div>
+
+                <!-- Theme Toggle Button (Light / Dark) -->
+                <button id="themeToggleBtn" class="control-btn control-btn--icon-only" type="button" aria-label="Toggle dark mode">
+                    <span id="themeToggleIcon">
+                        <!-- Moon icon rendered by theme.js -->
+                        <svg viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 00-1.9 19.8 10 10 0 0011.5-11.5c-3.1.5-6.2-.6-8.2-2.6-2-2-3.1-5.1-2.6-8.2-.4.7-.6 1.6-.6 2.5z"/></svg>
+                    </span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Profile Card -->
+        <div class="profile-card fade-in" id="profileCard">
+            <img class="profile-avatar"
+                 src="https://avatars.githubusercontent.com/u/30160512?v=4"
+                 alt="Barış Güneri"
+                 loading="lazy">
+            <div class="profile-info">
+                <h1 class="profile-name">Barış Güneri</h1>
+                <p class="profile-title" data-i18n="profileTitle">Android Developer</p>
+                <p class="profile-bio" data-i18n="profileBio">
+                    Mobile application developer passionate about Kotlin, Jetpack Compose, and modern Android architecture. Crafting scalable and intuitive apps with Clean Architecture, MVI, and Compose Multiplatform.
+                </p>
+
+                <div class="profile-tags">
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Jetpack Compose</span>
+                    <span class="tag">Android SDK</span>
+                    <span class="tag">MVI / MVVM</span>
+                    <span class="tag">Clean Architecture</span>
+                    <span class="tag">KMP</span>
+                    <span class="tag">Coroutines & Flow</span>
+                </div>
+
+                <div class="profile-links">
+                    <a href="https://play.google.com/store/apps/dev?id=8291046327375416952" target="_blank" rel="noopener noreferrer" class="profile-link profile-link--play">
+                        <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.637V3.451c0-.624.23-1.198.61-1.637zm11.24 11.24l2.128 2.128-11.83 6.822 9.702-8.95zm0-2.108L5.147 2.004l11.83 6.822-2.128 2.12zM18.17 10.6l3.327 1.92a.965.965 0 010 1.674l-3.327 1.92-2.31-2.31 2.31-2.198z"/></svg>
+                        Google Play
+                    </a>
+                    <a href="https://github.com/barisgneri" target="_blank" rel="noopener noreferrer" class="profile-link">
+                        <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/barisguneri/" target="_blank" rel="noopener noreferrer" class="profile-link">
+                        <svg viewBox="0 0 16 16"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.19zM3.558 4.955a1.376 1.376 0 110-2.752 1.376 1.376 0 010 2.752zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://medium.com/@barisguneri" target="_blank" rel="noopener noreferrer" class="profile-link">
+                        <svg viewBox="0 0 16 16"><path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 010 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 019.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8zm2.025 0c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.793-3.795.44 0 .794 1.7.794 3.795z"/></svg>
+                        Medium
+                    </a>
+                    <a href="mailto:barisgnrs@gmail.com" class="profile-link">
+                        <svg viewBox="0 0 16 16"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5C0 2.784.784 2 1.75 2zM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V5.809L8.38 9.397a.75.75 0 01-.76 0L1.5 5.809v6.442zm13-8.181v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81z"/></svg>
+                        Mail
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
+                <span class="repo-count" data-i18n="projectsBadge">Curated Works</span>
+            </div>
+
+            <div id="projectsContainer"></div>
+
+            <div class="github-more-container">
+                <a href="https://github.com/barisgneri?tab=repositories" target="_blank" rel="noopener noreferrer" class="github-more-btn">
+                    <svg class="github-icon" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    <span data-i18n="viewAllGitHub">View all repositories on GitHub</span>
+                    <svg class="external-arrow" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 010 1.5H4.56l7.72 7.72a.75.75 0 11-1.06 1.06L3.5 4.56v2.69a.75.75 0 01-1.5 0v-3.5A1.75 1.75 0 013.75 2z"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="educationTitle">Education</h2>
+            </div>
+
+            <div class="education-grid">
+                <!-- Education Item 1 -->
+                <div class="education-card">
+                    <div class="education-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM3.45 9L12 4.34 20.55 9 12 13.66 3.45 9zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <span class="education-degree" data-i18n="education1Degree">Computer Programming</span>
+                        <h3 class="education-school" data-i18n="education1School">Selçuk University</h3>
+                        <p class="education-detail" data-i18n="education1Detail">Associate Degree in Computer Programming</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="education-card">
+                    <div class="education-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM3.45 9L12 4.34 20.55 9 12 13.66 3.45 9zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <span class="education-degree" data-i18n="education2Degree">Management Information Systems</span>
+                        <h3 class="education-school" data-i18n="education2School">Anadolu University</h3>
+                        <p class="education-detail" data-i18n="education2Detail">Bachelor's Degree in Management Information Systems</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="education-card">
+                    <div class="education-icon-wrapper education-icon-wrapper--accent">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <span class="education-degree" data-i18n="education3Degree">Mobile Application Development with Flutter</span>
+                        <h3 class="education-school" data-i18n="education3School">Google Game & Application Academy</h3>
+                        <p class="education-detail" data-i18n="education3Detail">Entrepreneurship, Project Management, and Flutter Mobile Development Program</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p data-i18n="footerText">&copy; 2024 Barış Güneri &middot; Deployed with GitHub Pages</p>
+        </footer>
+    </div>
+
+    <!-- Application Modules -->
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
